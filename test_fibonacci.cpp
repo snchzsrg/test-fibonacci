@@ -10,6 +10,9 @@ TEST(FibonacciFunctionTest, fibsequence)
     EXPECT_EQ(3, fibonacci(4));
     EXPECT_EQ(5, fibonacci(5));
     EXPECT_EQ(8, fibonacci(6));
+    EXPECT_EQ(13, fibonacci(7));
+    EXPECT_EQ(21, fibonacci(8));
+    EXPECT_EQ(34, fibonacci(9));
 }
 
 int main(int argc, char** argv)
