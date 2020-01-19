@@ -15,6 +15,14 @@ TEST(FibonacciFunctionTest, fibsequence)
     EXPECT_EQ(34, fibonacci(9));
 }
 
+TEST(FibonacciFunctionTest, fibexception)
+{
+    EXPECT_THROW(fibonacci(-3928), std::out_of_range);
+    EXPECT_THROW(fibonacci(-1), std::out_of_range);
+    EXPECT_NO_THROW(fibonacci(0));
+    EXPECT_NO_THROW(fibonacci(2));
+}
+
 int main(int argc, char** argv)
 {
     testing::InitGoogleTest(&argc, argv);

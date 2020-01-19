@@ -5,7 +5,7 @@
 
 int fibonacci(int n)
 {
-    if (n < 0) { throw "n cannot be less than 0"; }
+    if (n < 0) { throw std::out_of_range("n cannot be less than 0"); }
 
     if (n == 0) { return 0; }
     else if (n <= 2) { return 1; }
